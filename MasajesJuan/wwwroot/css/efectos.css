@@ -1,0 +1,29 @@
+﻿figure {
+    transition: all 500ms;
+}
+
+#imag1:hover img {
+    opacity: 0.5;
+}
+#imag2:hover img {
+    opacity: 0.5;
+}
+#imag3:hover img {
+    opacity: 0.5;
+}
+#imag4:hover img {
+    opacity: 0.5;
+}
+#imag5:hover img {
+    opacity: 0.5;
+}
+
+.imag:hover figcaption {
+    transform: scale(1);
+    transform-origin: 0 0;
+    opacity: 1;
+}
+
+article:hover {
+    box-shadow: 0 0 40px #4f9;
+}

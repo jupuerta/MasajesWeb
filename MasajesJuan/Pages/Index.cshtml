@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<section id="seccionPort">
+        <div class="servall">
+            <div id="portada">
+                
+                <div id="banda1">
+                    <img src="images/banda1.jpg">
+                </div>
+                <div id="portadaImg">
+                    <h3>¡Elige los masajes que más te gusten!</h3>
+                    <p>Para reservar un servicio pulsa en la opcion de "Servicios" que se encuentra en la cabecera. Donde aparecerán los diferentes tipos de masajes que se ofrecen.</p>
+                    <p>No te olvides de pasar el cursor por encima de las imágenes para conocer el precio y más información relevante.</p>
+                    <br>
+                    <br>
+                    <h3>Coge cita ahora</h3>
+                    <form action="" method="post" id="formularioContrato">
+                        <p>Correo Electrónico: <input id="emailform" type="email"></p>
+                        <p><label for="masajes-servicios">Elige un masaje:</label>
+                        <select name="masajes-servicios" id="comboMasajes">
+                            <option value="mal">Elija</option>
+                            <option value="acupresion">Acupresión china</option>
+                            <option value="aceite">Acupresión con aceite</option>
+                            <option value="balines">Masaje Balinés</option>
+                            <option value="tailandes">Masaje Tailandés</option>
+                            <option value="facial">Tratamiento Facial Natural</option>
+                        </select>
+                        </p>
+                        <p>
+                            <label for="cita">Fecha Solicitada:</label>
+                            <input type="date" id="start" value="YYYY-MM-DD">
+                        </p>
+                        <p>Sexo:
+                        <input type="radio" name="hm" id="male" value="h"> Hombre
+                        <input type="radio" name="hm" id="female" value="m"> Mujer
+                        </p>
+                        <div id="contError">
+
+                        </div>
+                        <button type="button" class="btn btn-primary btn-md" onclick="validarForm()">
+                            Validar formulario
+                        </button>
+                        <div id="contRes">
+
+                        </div>
+                    </form>
+                </div>
+                <div id="banda2">
+                    <img src="images/banda2.jpg">
+                </div>
+                <figcaption>
+                    <h3>Los mejores masajes están aquí</h3>
+                </figcaption>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="col-md-10 offset-md-1">
+                    <ul>
+                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Juan Puerta Gil de Gómez &copy; 2022. All rights reserved</p>
+        </div>
+    </footer>

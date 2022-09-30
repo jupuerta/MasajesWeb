@@ -1,0 +1,243 @@
+﻿@font-face {
+  font-family: "Bungee Inline";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bungee Inline"), local("BungeeInline-Regular"), url(https://fonts.gstatic.com/s/bungeeinline/v2/Tb-1914q4rFpjT-F66PLCTxObtw73-qQgbr7Be51v5c.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/*PORTADA*/
+/* Header */
+#seccionPort {
+  background: url("../images/fondoInicio2.jpg") repeat;
+  margin-left: 6em;
+  margin-right: 6em;
+  height: 45em;
+  background-color: darkred;
+  border: solid 6px;
+  margin-left: 8em auto;
+  margin-right: 8em auto;
+}
+
+#portada {
+  margin-left: 4em;
+  margin-right: 4em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#banda1 {
+  width: 30%;
+  display: flex;
+  height: auto;
+  align-items: flex-end;
+  justify-content: center;
+  width: fit-content;
+}
+
+#portadaImg {
+  background-color: darkred;
+  border: 5px solid black;
+  width: 40%;
+  text-align: center;
+  color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#banda2 {
+  width: 30%;
+  display: flex;
+  height: auto;
+  align-items: flex-start;
+  justify-content: center;
+  width: fit-content;
+}
+
+/* Header */
+header {
+  margin-top: 2em;
+  background-color: black;
+  padding: 0;
+  height: 100px;
+  border-bottom: 2px solid #000;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  width: auto;
+}
+
+a {
+  color: aliceblue;
+}
+
+header #logo {
+  float: left;
+  width: auto;
+  margin: 12px;
+  font: 18pt/35pt "Bungee Inline", Arial, sans-serif;
+  color: aqua;
+}
+
+header nav {
+  float: right;
+  margin: 12px;
+}
+
+header nav ul {
+  padding: 0;
+  margin-right: 6px;
+}
+
+header nav li {
+  display: inline;
+  font: 12pt/35pt "Bungee Inline", Arial, sans-serif;
+  color: aqua;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+/* body */
+body {
+  margin: auto 30px;
+  background: url("../images/fondo.jpg") repeat;
+}
+
+#tiposMasajes {
+  background-color: darkred;
+  border: solid 6px;
+  margin-left: 8em auto;
+  margin-right: 8em auto;
+}
+
+.tipomasaje {
+  text-decoration: underline;
+}
+
+#servicios {
+  color: white;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.servall {
+  position: relative;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+article {
+  border-radius: 15px;
+  padding: 0;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+article:last-child {
+  padding: 0;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-bottom: 2em;
+}
+
+.par {
+  background-color: darkgrey;
+}
+
+.impar {
+  background-color: lightgrey;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contenedor > div {
+    width: 50%;
+  }
+}
+.negrita {
+  font-weight: 900;
+}
+
+ul {
+  list-style: none;
+}
+
+.tipomasaje {
+  text-align: center;
+  font-size: 26px;
+}
+
+.servicios > h2 {
+  font-size: 30px;
+}
+
+.text {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+}
+
+.centrarImag {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.imag {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+figcaption {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  flex-direction: column;
+  background: #cf5050;
+  margin: 10px;
+  border-radius: 3px;
+  padding: 10px;
+  width: 230px;
+  color: #fff;
+  font-size: 10pt;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: 0 0;
+  opacity: 1;
+}
+
+#contError {
+  background-color: lightgray;
+  border: solid;
+  border-color: black;
+  margin-left: 6em;
+  margin-right: 6em;
+  color: darkred;
+}
+
+footer {
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12pt;
+  color: white;
+}
