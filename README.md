@@ -1,4 +1,4 @@
-# MasajesJuan
+# Página web de masajes
 ---HTML y SCSS---
 En este proyecto he realizado dos htmls donde en uno está la página principal y en el otro 
 la página de los servicios del salón de masaje. De entre las funcionalidades con css que 
